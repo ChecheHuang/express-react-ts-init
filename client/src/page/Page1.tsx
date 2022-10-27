@@ -10,7 +10,7 @@ function Page1() {
   console.log('sampleApi', sampleApi)
   useEffect(() => {
     dispatch(updateStart())
-    dispatch(updateSuccess({ test2: 'test2' }))
+    dispatch(updateSuccess({ test: 'test2' }))
     dispatch(updateError())
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
