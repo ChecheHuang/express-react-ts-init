@@ -23,9 +23,9 @@ export const initSlice = createSlice({
     updateStart(state) {
       state.pending = true
     },
-    updateSuccess(state, action: PayloadAction<any>) {
+    updateSuccess(state, action: PayloadAction<info>) {
       state.pending = false
-      state.info = { ...state.info, ...action.payload }
+      state.info = action.payload
     },
     updateError(state) {
       state.error = true
